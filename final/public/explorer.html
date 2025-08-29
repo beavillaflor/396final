@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Filipino Food Finder</title>
+    <!-- BOOTSTRAP AND CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <!-- GOOGLE MAPS API -->
+    <script src="javascript/map.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvmv-BbNdLDTTSyeCTWYxBuNwTDyTsHn0&v=weekly&callback=initMap">
+    </script>
+</head>
+  <body>
+    <nav>
+        <div class="container text-center">
+            <div class="row">
+            <div class="col">
+                Filipino Food Finder
+            </div>
+            <div class="col">
+                <a href=index.html>
+                <span data-lang-text="en">
+                Home
+                </span>
+                <span data-lang-text="tl" hidden>
+                Pangunahing pahina
+                </span>
+            </a>
+            </div>
+            <div class="col">
+                <a href=information.html>
+                <span data-lang-text="en">
+                Why Filipino food?
+                </span>
+                <span data-lang-text="tl" hidden>
+                Bakit pagkaing Pilipino?
+                </span>
+            </a>
+            </div>
+            <div class="col">
+                <a href="explorer.html">
+                    <span data-lang-text="en">
+                    Restaurant explorer
+                    </span>
+                    <span data-lang-text="tl" hidden>
+                    Panggalugad ng kainan
+                    </span>
+                </a>
+            </div>
+            <div class="col">
+                <a href=about.html>
+                <span data-lang-text="en">
+                About the project
+                </span>
+                <span data-lang-text="tl" hidden>
+                Tungkol sa proyekto
+                </span>
+            </a>
+            </div>
+            <div class="col-auto ms-auto" id="react-theme-toggle"></div>
+            <div class="col-auto ms-auto" id="react-lang-toggle"></div>
+    </nav>
+    <div class="col mt-4 mb-4">
+        <h1>
+            <span data-lang-text="en">
+                Restaurant explorer
+            </span>
+            <span data-lang-text="tl" hidden>
+                Panggalugad ng kainan
+            </span>
+        </h1>
+        <h2>
+            <span data-lang-text="en">
+                See all the Filipino restaurants the Chicagoland area has to offer!
+            </span>
+            <span data-lang-text="tl" hidden>
+                Tignan ang mga kainan na Pilipino na nasa Chicagoland!
+            </span>
+        </h2>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+        <div class="col">
+        <div id="map">
+            Map goes here lol!
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="row justify-content-evenly">
+            <div class="row">
+                <div class="col">
+                    Filipino Food Finder
+                </div>
+                <div class="col">
+                    <span data-lang-text="en">
+                        Copyright 2025
+                    </span>
+                    <span data-lang-text="tl" hidden>
+                        Copyright 2025
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- REACT AND TOGGLES -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="javascript/component.js"></script>
+  </body>
+</html>

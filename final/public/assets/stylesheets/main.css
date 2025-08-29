@@ -1,0 +1,145 @@
+/* DATA THEMES */
+
+[data-theme="light"] {
+    --color-bg: white;
+    --color-fg: #000000;
+    --border-color: #424c55;
+    --hyperlink-color: rgb(94, 36, 94);
+    --hover-color: black;
+    --nav-color: rgb(227, 237, 239);
+    
+}
+
+[data-theme="dark"] {
+    --color-bg: #424c55;
+    --color-fg: #f5edf0;
+    --border-color: #dfd0d6;
+    --hyperlink-color: aquamarine;
+    --hover-color: #f5edf0;
+    --nav-color: rgb(111, 118, 119);
+}
+
+[data-theme-toggle] {
+    border: none;
+    background: none;
+}
+
+[data-lang-toggle] {
+    border: none;
+    background: none;
+}
+
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    text-align: center;
+}
+
+/* HEADINGS */
+
+a {
+    color: var(--hyperlink-color)
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+nav {
+    background-color: var(--nav-color);
+    font-family: "Faculty Glyphic";
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: var(--nav-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Faculty Glyphic";
+    margin-top: 20px;
+}
+
+nav a {
+    font-family: "Faculty Glyphic";
+}
+
+nav a:hover {
+    color: var(--hover-color);
+    font-family: "Faculty Glyphic";
+    text-decoration: underline;
+}
+
+a:focus {
+    color: var(--hover-color);
+}
+
+h1 {
+    font-family: "Faculty Glyphic";
+}
+
+h2 {
+    font-family: "Faculty Glyphic";
+}
+
+h3 {
+    font-family: "Faculty Glyphic";
+}
+
+h4 {
+    text-align: justify;
+}
+
+.accordion-header {
+    font-size: 100px;
+    font-family: "Faculty Glyphic";
+}
+
+h5 {
+    text-align: justify;
+}
+
+h6 {
+    text-align: justify;
+}
+
+/* IMAGES */
+
+img {
+    margin: auto;
+    border: 5px solid var(--border-color);
+    max-width: 50%;  
+}
+
+.logo {
+    border: none;
+    min-width: 100px;      
+    transition: transform 0.3s ease;
+}
+
+.dish {
+    width: 200px;
+    min-width: 100px;      
+    height: 200px;
+    display: block;
+    object-fit: contain;  
+    border: none; 
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+[data-theme="dark"] [data-lang-toggle] svg {
+  color: white;
+}
+
+[data-theme="light"] [data-lang-toggle] svg {
+  color: black; /* or your preferred color */
+}
